@@ -214,7 +214,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 kext-dev-mode=1</string>
+		<string>dart=0 nv_disable=1 kext-dev-mode=1 -rad4200</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -282,7 +282,7 @@
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Key</key>
 				<string>name</string>
 				<key>Value</key>
@@ -294,7 +294,7 @@
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Key</key>
 				<string>IOName</string>
 				<key>Value</key>
@@ -306,7 +306,7 @@
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Key</key>
 				<string>class-code</string>
 				<key>Value</key>
@@ -372,6 +372,8 @@
 		<array>
 			<string>Preboot</string>
 		</array>
+		<key>Language</key>
+		<string>en-US:0</string>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
@@ -388,6 +390,8 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
+		<key>ScreenResolution</key>
+		<string>3840×2160</string>
 		<key>Theme</key>
 		<string>Hackintosh_ID</string>
 	</dict>
@@ -403,9 +407,9 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
@@ -420,6 +424,8 @@
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
 		</array>
+		<key>KernelCpu</key>
+		<true/>
 		<key>KernelLapic</key>
 		<true/>
 		<key>KernelPm</key>
@@ -430,7 +436,7 @@
 				<key>Comment</key>
 				<string>Disable panic kext logging on 10.13 Debug kernel</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>sABMi1Xw</data>
 				<key>MatchOS</key>
@@ -442,7 +448,7 @@
 				<key>Comment</key>
 				<string>Disable panic kext logging on 10.13 Release kernel</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>igKEwHRE</data>
 				<key>MatchOS</key>
@@ -454,7 +460,7 @@
 				<key>Comment</key>
 				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>ILniAAAADzA=</data>
 				<key>Replace</key>
@@ -467,7 +473,7 @@
 				<key>Comment</key>
 				<string>DVMT for AppleIntelBDWGraphicsFramebuffer (Credits DalianSky) for 10.14.x</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>dkBI/wU=</data>
 				<key>InfoPlistPatch</key>
@@ -483,7 +489,7 @@
 				<key>Comment</key>
 				<string>DVMT for AppleIntelSKLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.14.x</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>dkBI/wU=</data>
 				<key>InfoPlistPatch</key>
@@ -499,7 +505,7 @@
 				<key>Comment</key>
 				<string>DVMT for AppleIntelKBLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.14.x</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>dkZI/wU=</data>
 				<key>InfoPlistPatch</key>
@@ -515,7 +521,7 @@
 				<key>Comment</key>
 				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.14.x</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>dkBI/wU=</data>
 				<key>InfoPlistPatch</key>
@@ -531,7 +537,7 @@
 				<key>Comment</key>
 				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.14.x</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>dkZI/wU=</data>
 				<key>InfoPlistPatch</key>
@@ -547,7 +553,7 @@
 				<key>Comment</key>
 				<string>Change 15 port limit to 24 in XHCI kext 10.13</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g32MEA==</data>
 				<key>InfoPlistPatch</key>
@@ -561,7 +567,7 @@
 				<key>Comment</key>
 				<string>0x19160000/etc, 32MB BIOS, 19MB framebuffer 9MB cursor bytes (credit RehabMan)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>AAAgAgAAUAE=</data>
 				<key>InfoPlistPatch</key>
@@ -617,7 +623,7 @@
 				<key>Comment</key>
 				<string>USB port limit patch 10.14.x modify by DalianSky(credit ydeng)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
@@ -633,7 +639,7 @@
 				<key>Comment</key>
 				<string>USB port limit patch 10.14.x modify by DalianSky(credit PMHeart)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g+MP0w==</data>
 				<key>InfoPlistPatch</key>
@@ -649,7 +655,7 @@
 				<key>Comment</key>
 				<string>USB Port limit patch 10.14.x modify by DalianSky(credits PMheart)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
